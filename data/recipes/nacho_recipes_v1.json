@@ -1,0 +1,10 @@
+{
+  "recipes": {
+    "Mexis": {"pre_oven": ["chips", "cheese", "red_sauce"], "post_oven": []},
+    "Con Pollo": {"pre_oven": ["chips", "cheese", "tomato", "chicken", "tomatillo_sauce"], "post_oven": []},
+    "Veggie": {"pre_oven": ["chips", "cheese", "tomato", "mushrooms", "onion", "green_pepper", "red_sauce"], "post_oven": []},
+    "Carne": {"pre_oven": ["chips", "cheese", "pico", "red_sauce"], "post_oven": ["taco_beef"]},
+    "Wing Nachos": {"pre_oven": ["chips", "cheese", "chicken", "bacon", "wing_sauce"], "post_oven": ["green_onion"], "defaults": {"wing_sauce_heat": "mild"}, "modifiers": ["medium", "hot"]},
+    "Chipotle Chicken": {"pre_oven": ["chips", "cheese", "tomato", "mushrooms", "onion", "green_pepper", "chicken", "bacon", "honey_chipotle_sauce"], "post_oven": []}
+  }
+}
