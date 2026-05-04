@@ -1,0 +1,19 @@
+{
+  "ingredients": {
+    "chips": {"type": "base"},
+    "cheese": {"type": "critical"},
+    "red_sauce": {"type": "sauce"},
+    "tomato": {"type": "vegetable"},
+    "chicken": {"type": "critical"},
+    "tomatillo_sauce": {"type": "sauce"},
+    "mushrooms": {"type": "vegetable"},
+    "onion": {"type": "vegetable"},
+    "green_pepper": {"type": "vegetable"},
+    "pico": {"type": "vegetable"},
+    "taco_beef": {"type": "protein"},
+    "bacon": {"type": "protein"},
+    "wing_sauce": {"type": "sauce"},
+    "green_onion": {"type": "vegetable"},
+    "honey_chipotle_sauce": {"type": "sauce"}
+  }
+}

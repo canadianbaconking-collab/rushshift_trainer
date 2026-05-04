@@ -1,0 +1,24 @@
+{
+  "station": "S1",
+  "plate_stock": {"regular": 15, "large": 10},
+  "initial_stock": {
+    "chips": 50,
+    "cheese": 30,
+    "red_sauce": 30,
+    "tomato": 30,
+    "chicken": 20,
+    "tomatillo_sauce": 20,
+    "mushrooms": 20,
+    "onion": 20,
+    "green_pepper": 20,
+    "pico": 20,
+    "taco_beef": 20,
+    "bacon": 20,
+    "wing_sauce": 20,
+    "green_onion": 20,
+    "honey_chipotle_sauce": 20,
+    "regular_plate": 15,
+    "large_plate": 10
+  },
+  "critical_stock": ["cheese", "chicken"]
+}

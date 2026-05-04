@@ -1,0 +1,113 @@
+[gd_scene load_steps=5 format=3 uid="uid://b3i2kmain"]
+
+[ext_resource type="Script" path="res://scripts/main.gd" id="1"]
+
+[node name="Main" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1")
+
+[node name="Background" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.13, 0.13, 0.15, 1)
+
+[node name="RootMargin" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 10.0
+offset_top = 10.0
+offset_right = -10.0
+offset_bottom = -10.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MainVBox" type="VBoxContainer" parent="RootMargin"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 8
+
+[node name="StatusBar" type="Label" parent="RootMargin/MainVBox"]
+layout_mode = 2
+text = "Avg: 0.0s | Highest: 0.0s | Active: 0 | Score: 0"
+
+[node name="TicketScroll" type="ScrollContainer" parent="RootMargin/MainVBox"]
+layout_mode = 2
+custom_minimum_size = Vector2(0, 175)
+size_flags_horizontal = 3
+
+[node name="TicketCards" type="HBoxContainer" parent="RootMargin/MainVBox/TicketScroll"]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="MainPanel" type="HBoxContainer" parent="RootMargin/MainVBox"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 12
+
+[node name="StationPanel" type="VBoxContainer" parent="RootMargin/MainVBox/MainPanel"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 6
+
+[node name="SelectedTicketLabel" type="Label" parent="RootMargin/MainVBox/MainPanel/StationPanel"]
+layout_mode = 2
+text = "Selected Ticket: None"
+
+[node name="PlateButtons" type="HBoxContainer" parent="RootMargin/MainVBox/MainPanel/StationPanel"]
+layout_mode = 2
+
+[node name="PlateRegular" type="Button" parent="RootMargin/MainVBox/MainPanel/StationPanel/PlateButtons"]
+layout_mode = 2
+text = "Choose Regular Plate"
+
+[node name="PlateLarge" type="Button" parent="RootMargin/MainVBox/MainPanel/StationPanel/PlateButtons"]
+layout_mode = 2
+text = "Choose Large Plate"
+
+[node name="IngredientButtons" type="GridContainer" parent="RootMargin/MainVBox/MainPanel/StationPanel"]
+layout_mode = 2
+columns = 4
+
+[node name="Actions" type="HBoxContainer" parent="RootMargin/MainVBox/MainPanel/StationPanel"]
+layout_mode = 2
+
+[node name="SendToOven" type="Button" parent="RootMargin/MainVBox/MainPanel/StationPanel/Actions"]
+layout_mode = 2
+text = "Send To Oven"
+
+[node name="SendToService" type="Button" parent="RootMargin/MainVBox/MainPanel/StationPanel/Actions"]
+layout_mode = 2
+text = "Send To Service"
+
+[node name="ResetBuild" type="Button" parent="RootMargin/MainVBox/MainPanel/StationPanel/Actions"]
+layout_mode = 2
+text = "Reset Build"
+
+[node name="StationState" type="Label" parent="RootMargin/MainVBox/MainPanel/StationPanel"]
+layout_mode = 2
+text = "Build state"
+
+[node name="StockLabel" type="Label" parent="RootMargin/MainVBox/MainPanel/StationPanel"]
+layout_mode = 2
+text = "Stock"
+
+[node name="DebriefPanel" type="TextEdit" parent="RootMargin/MainVBox/MainPanel"]
+layout_mode = 2
+size_flags_horizontal = 3
+editable = false
+text = "Shift Debrief"
+
+[node name="GameTimer" type="Timer" parent="."]
+wait_time = 1.0
+autostart = true
