@@ -1,0 +1,13 @@
+:root { color-scheme: dark; font-family: system-ui, sans-serif; }
+body { margin: 0; padding: 1rem; background: #0e1116; color: #e8f0ff; }
+header { margin-bottom: 1rem; }
+.layout { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+.kds { display: flex; gap: .5rem; overflow: auto; min-height: 400px; }
+.ticket { background: #1a2432; border: 2px solid #2f4560; width: 180px; padding: .5rem; cursor: pointer; }
+.ticket.urgent { border-color: #e74762; }
+.ticket.selected { outline: 2px solid #53d1ff; }
+.panel { background: #1a2432; border: 1px solid #2f4560; padding: .75rem; min-height: 100px; }
+.controls { display: grid; grid-template-columns: 1fr; gap: .5rem; margin: .75rem 0; }
+button { background: #224767; color: #fff; border: 0; padding: .6rem; cursor: pointer; }
+button:hover { background: #2f5f87; }
+.small { opacity: .85; font-size: .9rem; }
