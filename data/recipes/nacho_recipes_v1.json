@@ -1,10 +1,102 @@
 {
   "recipes": {
-    "Mexis": {"pre_oven": ["chips", "cheese", "red_sauce"], "post_oven": []},
-    "Con Pollo": {"pre_oven": ["chips", "cheese", "tomato", "chicken", "tomatillo_sauce"], "post_oven": []},
-    "Veggie": {"pre_oven": ["chips", "cheese", "tomato", "mushrooms", "onion", "green_pepper", "red_sauce"], "post_oven": []},
-    "Carne": {"pre_oven": ["chips", "cheese", "pico", "red_sauce"], "post_oven": ["taco_beef"]},
-    "Wing Nachos": {"pre_oven": ["chips", "cheese", "chicken", "bacon", "wing_sauce"], "post_oven": ["green_onion"], "defaults": {"wing_sauce_heat": "mild"}, "modifiers": ["medium", "hot"]},
-    "Chipotle Chicken": {"pre_oven": ["chips", "cheese", "tomato", "mushrooms", "onion", "green_pepper", "chicken", "bacon", "honey_chipotle_sauce"], "post_oven": []}
+    "Mexis": {
+      "pre_oven": [
+        "chips",
+        "cheese",
+        "red_sauce"
+      ],
+      "post_oven": [],
+      "default_side_ramekins": [
+        "salsa_side",
+        "sour_cream_side"
+      ]
+    },
+    "Con Pollo": {
+      "pre_oven": [
+        "chips",
+        "cheese",
+        "tomatoes",
+        "chicken",
+        "tomatillo_sauce"
+      ],
+      "post_oven": [],
+      "default_side_ramekins": [
+        "salsa_side",
+        "sour_cream_side"
+      ]
+    },
+    "Veggie": {
+      "pre_oven": [
+        "chips",
+        "cheese",
+        "tomatoes",
+        "mushrooms",
+        "onion",
+        "green_pepper",
+        "red_sauce"
+      ],
+      "post_oven": [],
+      "default_side_ramekins": [
+        "salsa_side",
+        "sour_cream_side"
+      ]
+    },
+    "Carne": {
+      "pre_oven": [
+        "chips",
+        "cheese",
+        "pico",
+        "red_sauce"
+      ],
+      "post_oven": [
+        "taco_beef"
+      ],
+      "default_side_ramekins": [
+        "salsa_side",
+        "sour_cream_side"
+      ]
+    },
+    "Wing Nachos": {
+      "pre_oven": [
+        "chips",
+        "cheese",
+        "chicken",
+        "bacon",
+        "wing_sauce"
+      ],
+      "post_oven": [
+        "green_onion"
+      ],
+      "defaults": {
+        "wing_sauce_heat": "mild"
+      },
+      "modifiers": [
+        "medium",
+        "hot"
+      ],
+      "default_side_ramekins": [
+        "salsa_side",
+        "sour_cream_side"
+      ]
+    },
+    "Chipotle Chicken": {
+      "pre_oven": [
+        "chips",
+        "cheese",
+        "tomatoes",
+        "mushrooms",
+        "onion",
+        "green_pepper",
+        "chicken",
+        "bacon",
+        "honey_chipotle_sauce"
+      ],
+      "post_oven": [],
+      "default_side_ramekins": [
+        "salsa_side",
+        "sour_cream_side"
+      ]
+    }
   }
 }

@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rush Shift Trainer — Nacho Station V1</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Rush Shift Trainer — Nacho Station V1</h1>
+    <p>Thin web-app slice: KDS triage + nacho assembly/oven/finish loop.</p>
+  </header>
+
+  <main class="layout">
+    <section>
+      <h2>KDS</h2>
+      <div id="kds" class="kds"></div>
+    </section>
+
+    <section>
+      <h2>Station</h2>
+      <div id="ticketDetail" class="panel">Select a ticket.</div>
+      <div class="controls">
+        <button data-action="start">Start (grab plate/box)</button>
+        <button data-action="pre">Add required pre-oven</button>
+        <button data-action="oven">Send to oven</button>
+        <button data-action="post">Add required post-oven + sides</button>
+        <button data-action="serve">Serve + validate</button>
+      </div>
+      <div id="log" class="panel"></div>
+    </section>
+  </main>
+
+  <script type="module" src="webapp.js"></script>
+</body>
+</html>

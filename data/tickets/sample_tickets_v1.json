@@ -1,11 +1,55 @@
 {
   "tickets": [
-    {"order_id": "N1001", "source": "Dine In", "station": "S1", "item_name": "Mexis", "size": "regular", "modifiers": {}},
-    {"order_id": "N1002", "source": "Takeout", "station": "S1", "item_name": "Carne", "size": "large", "modifiers": {}},
-    {"order_id": "N1003", "source": "Online", "station": "S1", "item_name": "Con Pollo", "size": "regular", "modifiers": {}},
-    {"order_id": "N1004", "source": "Dine In", "station": "S1", "item_name": "Wing Nachos", "size": "regular", "modifiers": {"wing_sauce_heat": "hot"}},
-    {"order_id": "N1005", "source": "Takeout", "station": "S1", "item_name": "Chipotle Chicken", "size": "large", "modifiers": {}},
-    {"order_id": "N1006", "source": "Online", "station": "S1", "item_name": "Veggie", "size": "regular", "modifiers": {}, "rush": true},
-    {"order_id": "N1007", "source": "Dine In", "station": "S1", "item_name": "Mexis", "size": "regular", "modifiers": {}, "recalled": true}
+    {
+      "order_id": "N1001",
+      "source": "Dine In",
+      "station": "S1",
+      "item_name": "Mexis",
+      "size": "regular",
+      "modifiers": {}
+    },
+    {
+      "order_id": "N1002",
+      "source": "Takeout",
+      "station": "S1",
+      "item_name": "Carne",
+      "size": "large",
+      "modifiers": {}
+    },
+    {
+      "order_id": "N1003",
+      "source": "Online",
+      "station": "S1",
+      "item_name": "Con Pollo",
+      "size": "regular",
+      "modifiers": {}
+    },
+    {
+      "order_id": "N1004",
+      "source": "Dine In",
+      "station": "S1",
+      "item_name": "Wing Nachos",
+      "size": "regular",
+      "modifiers": {
+        "wing_sauce_heat": "hot"
+      }
+    },
+    {
+      "order_id": "N1005",
+      "source": "Takeout",
+      "station": "S1",
+      "item_name": "Chipotle Chicken",
+      "size": "large",
+      "modifiers": {}
+    },
+    {
+      "order_id": "N1006",
+      "source": "Online",
+      "station": "S1",
+      "item_name": "Veggie",
+      "size": "regular",
+      "modifiers": {},
+      "rush": true
+    }
   ]
 }
